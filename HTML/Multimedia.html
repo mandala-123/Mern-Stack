@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MERN Workflow</title>
+    <link rel="stylesheet" href="../CSS/change.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #00d8ff;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #1e1e1e;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+        }
+        img, video {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            border: 2px solid #333;
+        }
+        .media-section {
+            margin-top: 30px;
+            padding: 20px;
+            background: #252525;
+            border-radius: 8px;
+            border: 1px solid #333;
+            text-align: left;
+        }
+        audio {
+            width: 100%;
+            margin-top: 10px;
+        }
+        .back-btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 10px 20px;
+            background-color: #00d8ff;
+            color: #121212;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .back-btn:hover {
+            background-color: #00b3d6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>MERN Stack Workflow</h1>
+        <p>A comprehensive multimedia presentation of the MongoDB, Express.js, React.js, and Node.js workflow.</p>
+        
+        <div class="media-section">
+            <h2>1. Video Walkthrough</h2>
+            <p style="margin: 0 0 15px 0; color: #aaa; font-size: 0.9em;">Watch the architectural diagram paired with voiceover explanation.</p>
+            <video controls>
+                <source src="files/mern_workflow.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <div class="media-section">
+            <h2>2. Static Diagram</h2>
+            <p style="margin: 0 0 15px 0; color: #aaa; font-size: 0.9em;">High-resolution workflow chart illustrating MERN stack interactions.</p>
+            <img src="files/mern_workflow.jpg" alt="MERN Stack Workflow">
+        </div>
+        
+        <div class="media-section">
+            <h2>3. Audio Explanation</h2>
+            <p style="margin: 0 0 10px 0; color: #aaa; font-size: 0.9em;">Listen to a spoken narration detailing the MERN stack data flow.</p>
+            <audio controls>
+                <source src="files/mern_workflow.wav" type="audio/wav">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        
+        <br>
+        <a href="index.html" class="back-btn">Go to Home</a>
+    </div>
+</body>
+</html>
