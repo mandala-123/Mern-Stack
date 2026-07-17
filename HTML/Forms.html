@@ -3,56 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forms</title>
-    
-    <link rel="stylesheet" href="../CSS/position.css">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="../CSS/Position.css" -->
 </head>
 <body>
-    <div>
+    <div class="data" id="Application">
+        <div id="title">
         <header>
             <h1>Forms</h1>
-        </header>
-            <main>
-                <form>
-                    <label >Name:</label>
-                    <input type="text" placeholder="Pooja">
-                    <br><br>
-                    <label >Email:</label>
-                    <input type="email" placeholder="pooja@example.com">
-                    <br><br>
-                    <label>Password:</label>
-                    <input type="password" placeholder="pooja@1731">
-                    <br><br>
-                    <label>Mobile No:</label>
-                    <input type="mobile no" placeholder="9150107335">
-                    <br><br>
-                    <label>Gender:</label>
-                    <input type="radio" name="gender" id="1">Male
-                    <input type="radio" name="gender" id="2">Female
-                    <br><br>
-                    <label>Qualification:</label>
-                    <input type="checkbox">10(<sup>th</sup>)
-                    <input type="checkbox">12(<sup>th</sup>)
-                    <input type="checkbox">diploma
-                    <input type="checkbox">Bachlors
-                    <input type="checkbox">Masters
-                    <input type="checkbox">phD
 
-                    <br><br>
-                    <label>D.O.B:</label>
-                    <input type="datetime-local">
+        </header></div>
+        <main>
+            <form>
+                <label>Name:</label>
+                <input type="text" id="name" placeholder="pooja">
+                <br><br>
+                <label>Email:</label>
+                <input type="email" id="email" placeholder="pooja@cse">
+                <br><br>
+                <label>Password:</label>
+                <input type="password" id="password" placeholder="pooja">
+                <br><br>
+                <label id="no">Phone No:</label>
+                <input type="phone number" id="phone" placeholder="91-1234567890">
+                <br><br>
+                <lable>Gender:</lable>
+                <input type="radio" name="Gender" id="1" value="Male">Male
+                <input type="radio" name="Gender" id="2" value="FeMale">FeMale
+                <input type="radio" name="Gender" id="3" value="Prefer not to say">Prefer not to say
+                <br><br>
+               <label>Qualification:</label>
+                <input class="Qualification" type="checkbox" value="10th">10 <sup>th</sup>
+                <input class="Qualification" type="checkbox" value="12th">12 <sup>th</sup>
+                <input type="checkbox" class="Qualification" value="Diploma">Diploma
+                <input type="checkbox" class="Qualification" value="Bachelors">Bachelors
+                <input type="checkbox" value="Masters" class="Qualification">Masters
+                <input type="checkbox" value="Doctrate" class="Qualification">Doctrate
+                <br><br>
+                <label>D.O.B:</label>
+                <input type="datetime-local" id="data">
+                <br><br>
+                <label>Color:</label>
+                <input type="color">
+                <br><br>
+                <label>Image:</label>
+                <input type="file" id="image">
+                <br><br>
+            </form>
 
-                    <br><br>
-                    <label>Image:</label>
-                    <input type="file">
-
-                    <br><br>
-                    <input type="submit" >
-                </form>
-            </main>
-        
+        </main>
+        <footer>
+            <button type="button" onclick="show()">submit</button>
+        </footer>
+    </div>
+    <div id="result">
 
     </div>
-    
+    <script src="../js/script.js"></script>
 </body>
 </html>
