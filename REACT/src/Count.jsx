@@ -11,8 +11,8 @@ function Count(){
         <>
         <h1 className="count">Count:{count}</h1>
         <div className="counting">
-        <button onClick={() => setCount(count + 1)}>+1</button>
-        <button onClick={() => setCount(count - 1)}>-1</button>
+        <button onDoubleClick={() => setCount(count + 1)}>+1</button>
+        <button onDoubleClick={() => setCount(count - 1)}>-1</button>
         
         
         <h2>Mobile:{Mobile}</h2>
@@ -23,7 +23,7 @@ function Count(){
         <input type="text" placeholder="enter your lunch" value={lunch} onChange={(e)=>biryani(e.target.value)}/>
         
         </div>  
-        <UserContext.Provider value="Suri">
+        <UserContext.Provider value="poojitha">
             <Parent />
         </UserContext.Provider>
         
